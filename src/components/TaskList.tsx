@@ -73,17 +73,17 @@ export default function TaskList() {
                     type="checkbox"
                     checked={task.completed}
                     onChange={() => toggleTask(task.id, task.completed)}
-                    className="hidden"
+                    className="peer hidden"
                   />
                   <div
-                    className={`w-6 h-6 mr-2 border-2 border-blue-500 rounded-full flex items-center justify-center cursor-pointer ${
+                    className={`w-6 h-6 mr-2 border-2 border-blue-500 rounded-full flex items-center justify-center cursor-pointer peer-checked:bg-blue-500 ${
                       task.completed ? 'bg-blue-500' : 'bg-gray-700'
                     }`}
                     onClick={() => toggleTask(task.id, task.completed)}
                   >
                     {task.completed && <div className="w-3 h-3 bg-white rounded-full"></div>}
                   </div>
-                  <Link href={`/edit/${task.id}`} className={`text-white ${task.completed ? 'line-through' : ''}`}>
+                  <Link href={`/edit/${task.id}`} className={`text-white ${task.completed ? 'line-through text-gray-600' : ''}`}>
                     {task.title}
                   </Link>
                 </div>
