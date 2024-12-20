@@ -2,6 +2,9 @@
 
 This is the frontend for the Todo List application, built with Next.js and Tailwind CSS.
 
+## Prerequisites
+- The backend repository https://github.com/lorsim/todo-list-app-backend should be running for this frontend to work. Ensure that the backend is up and running before starting the frontend.
+
 ## Setup Instructions
 1. Clone the repository:
    ```bash
@@ -22,11 +25,11 @@ This is the frontend for the Todo List application, built with Next.js and Tailw
 The application will be available at http://localhost:3000.
 
 ## Features
-### View all tasks
-### Create new tasks
-### Edit existing tasks
-### Mark tasks as completed/uncompleted
-### Delete tasks
+    View all tasks
+    Create new tasks
+    Edit existing tasks
+    Mark tasks as completed/uncompleted
+    Delete tasks
 
 ## Building for Production
 To build the application for production, run:
