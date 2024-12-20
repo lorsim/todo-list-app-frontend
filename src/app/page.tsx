@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import TaskList from '../components/TaskList';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
           />
         </Link>
       </div>
+      <TaskList />
     </main>
   );
 }
